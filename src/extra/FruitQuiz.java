@@ -21,10 +21,13 @@ public class FruitQuiz extends KeyAdapter {
 	@Override
 	public void keyPressed(KeyEvent arg0) {
 		int keyCode = arg0.getKeyCode();
+		System.out.println(keyCode);
 		// 1. Print out the key code variable
 
 		// 2. Make 3 int variables that hold the key codes for A, b, and C
-		
+		int A=65;
+	    int B=66;
+	    int C=67;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		
 		// 12. If question2 is showing,
@@ -34,21 +37,26 @@ public class FruitQuiz extends KeyAdapter {
 			
 		if (question1.isShowing()) {
 			// 3. If they selected the right fruit, do steps 4 and 7
-			
+			if (keyCode==C) {
+				
+			correct();
 				// 4. Call the correct() method
 				
 				// 7. Use the nextQuestion() method to go to question2
-			
+			}
 			
 			// 8. else (if they touched something else)
 				
 				// 9. Call the incorrect() method
 		
-		}
+		} 
 
 	}
 
 	private void correct() {
+	
+		
+		
 		// 5. Find a sound for when they get a question right, and drag it into
 		// the 'extra' package. It must be a .wav file. 
 		// There are lots on freesound.org

@@ -11,7 +11,7 @@ public class SleepyHead {
     public static void main(String[] args) {
         
         boolean isWeekday, isVacation;
-        
+JOptionPane.showConfirmDialog(null, "Is it a weekday","Sleepy Head",JOptionPane.YES_NO_CANCEL_OPTION);        
         /* You MUST use the above boolean variables in your code */
         
         /*
