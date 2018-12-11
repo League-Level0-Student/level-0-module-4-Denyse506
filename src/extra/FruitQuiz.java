@@ -16,7 +16,7 @@ public class FruitQuiz extends KeyAdapter {
 	void makeQuestions() {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
 		question2= new JLabel("<html>What is the world longest river <br> A:Rio Grande <br> B:Amazon River <br> C:Columbia River");
-		question3= new JLabel("<html>What is the biggest country in the world <br>A:Russia <br>B:United States <br>Canada ");
+		question3= new JLabel("<html>What is the biggest country in the world <br>A:Russia <br>B:United States <br>C:Canada ");
 		question4= new JLabel("<html>What is the biggest state in population<br>A:Texas <br>B:California <Br>C:New york");
 		// 11. Make another question called "question2".  Use question1 above as a guide.
 	}

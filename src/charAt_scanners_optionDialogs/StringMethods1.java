@@ -11,10 +11,12 @@ public class StringMethods1 {
 String am="25";
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-System.out.println(am.charAt(i));
+System.out.println(am.charAt(1));
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
-
+ for(int i=0; i<3; i++) {
+   System.out.println(am.length());
+ }
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
 
