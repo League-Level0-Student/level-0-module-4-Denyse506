@@ -11,7 +11,6 @@ public class SimpleCalculator {
 		int num=Integer.parseInt(input);
 		String put=JOptionPane.showInputDialog("What number do you want with digit?");
 		int am=Integer.parseInt(put);
-
 		// 2. Customize pop-up to support add/subtract/multiply/divide operations.
 		int operation = JOptionPane.showOptionDialog(null, " ", "Pop-up Title", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Add", "Subtract", "Multiply", "Divide" },
@@ -19,12 +18,31 @@ public class SimpleCalculator {
 if (operation==0) {
 	add(num,am);
 }
+else if (operation==1) {
+	subtract(num,am);
+}
+else if (operation==2) {
+	multiply(num,am);
+}
+else if (operation==3) {
+	divide(num,am);
+}
+
 		// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
 
 		// 6. Wrap steps 1, 2 and 5 in a for loop to repeat calculator operations
 	}
 	static void add(int num,int am) {
 		JOptionPane.showMessageDialog(null, ""+num+"+"+am+"="+(num+am));
+	}
+	static void subtract(int num,int am) {
+		JOptionPane.showMessageDialog(null,(num-am));
+	}
+	static void multiply(int num,int am) {
+		JOptionPane.showMessageDialog(null, (num*am));
+	}
+	static void divide(int num,int am) {
+		JOptionPane.showMessageDialog(null, (num/am));
 	}
 
 	// 3. Create method for addition operation.

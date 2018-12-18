@@ -49,15 +49,15 @@ public class HappyPet {
 
 	static void feed() {
 		JOptionPane.showMessageDialog(null, "wag tail");
-		happines+=100;
+		happines+=10;
 	}
 	static void cuddle() {
 		JOptionPane.showMessageDialog(null, "happy");
-		happines++;
+		happines+=13;
 	}
 
 	static void groom() {
 		JOptionPane.showMessageDialog(null, "nice");
-		happines++;
+		happines+=26;
 	}
 }
